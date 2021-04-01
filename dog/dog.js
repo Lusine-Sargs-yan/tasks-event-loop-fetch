@@ -1,6 +1,6 @@
 const favoriteDogList = document.querySelector('#favorite-dogs')
 console.log(favoriteDogList);
-const searchButton = document.querySelector('.search-dogs-image');
+const searchButton = document.querySelector('.search-dog-image');
 
 //https://dog.ceo/api/breeds/list/all
 //https://dog.ceo/api/breed/hound/images
@@ -25,7 +25,7 @@ searchButton.addEventListener('click', (event) => {
         const div = document.createElement('div');
         const img = document.createElement('img');
         img.setAttribute('src', dogImage);
-        //img.classList('dog-image');// երբ ավելցանում եմ error է բերում promise մեջ չի թող calssList()աշխատի, ի՞նչու
+        //img.classList('dog-image');// երբ ավելցանում եմ error է բերում promise մեջ չի թողում calssList()աշխատի, ի՞նչու
         img.style.width = '250px';
         div.append(img);
         searchButton.append(div);
