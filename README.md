@@ -1,4 +1,5 @@
-
+### task1
+### Create a simple timer, with start, pause, reset options, the user also should have an opportunity to input the amount of time. 		
 ## task 2
 ### Create page which contains a select with options of the following dog breeds:
 ### -- Select a breed -- Akita
