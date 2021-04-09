@@ -25,7 +25,7 @@ searchButton.addEventListener('click', (event) => {
         const div = document.createElement('div');
         const img = document.createElement('img');
         img.setAttribute('src', dogImage);
-        //img.classList('dog-image');// երբ ավելցանում եմ error է բերում promise մեջ չի թողում calssList()աշխատի, ի՞նչու
+        //img.classList.add('dog-image');
         img.style.width = '250px';
         div.append(img);
         searchButton.append(div);
