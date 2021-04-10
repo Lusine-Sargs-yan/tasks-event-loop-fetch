@@ -16,22 +16,22 @@ searchButton.addEventListener('click', (event) => {
     console.log(resopnse, 'search dogs response');
     return resopnse.json();
   })
-    .then(({message}) => {
-      console.log(message, 'all images link of dogs');
+  .then(({message}) => {
+    console.log(message, 'all images link of dogs');
 
-      message.forEach((dogImage) => {
-        console.log(dogImage, 'every image of dogs');
+    message.forEach((dogImage) => {
+      console.log(dogImage, 'every image of dogs');
 
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.setAttribute('src', dogImage);
-        //img.classList.add('dog-image');
-        img.style.width = '250px';
-        div.append(img);
-        searchButton.append(div);
-      });
-
+      const div = document.createElement('div');
+      const img = document.createElement('img');
+      img.setAttribute('src', dogImage);
+      //img.classList.add('dog-image');
+      img.style.width = '250px';
+      div.append(img);
+      searchButton.append(div);
     });
+
+  });
 
   
 });
