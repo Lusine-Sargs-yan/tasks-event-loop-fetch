@@ -1,4 +1,4 @@
-const favoriteDogList = document.querySelector('#favorite-dogs')
+const favoriteDogList = document.querySelector('#dogs')
 console.log(favoriteDogList);
 const searchButton = document.querySelector('.search-dog-image');
 const forRender = document.querySelector('.render-image');

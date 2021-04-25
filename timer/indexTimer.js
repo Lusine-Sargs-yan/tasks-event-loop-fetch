@@ -33,12 +33,10 @@ function setTimer(duration) {
 
 }
 
-function startTimer() {
+function startTimer(duration) {// ինչու առանձին արգումենտ տամ, եթե setTimer=ում արդեն գրեմ եմ, նույն կոդը գրեմ՞
   // pauseTimer();
-  //setTimer();
-
   interval = setInterval(() => {
-    setTimer();
+    setTimer(300);
   }, 1000);
   console.log( interval = setInterval(() => {setTimer(); }, 1000));
 }
